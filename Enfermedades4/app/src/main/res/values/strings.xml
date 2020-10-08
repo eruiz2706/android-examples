@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Enfermedades</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- MEDICOS -->
+    <string name="medicos_list">LISTA MEDICOS</string>
+
+    <!-- MEDICAMENTOS -->
+    <string name="medicamentos_list">LISTA MEDICAMENTOS</string>
+
+    <!-- TRATAMIENTOS -->
+    <string name="tratamientos_list">LISTA TRATAMIENTOS</string>
+
+    <!-- AGENDA -->
+    <string name="agenda_list">LISTA AGENDA</string>
+
+    <!-- DIAGNOSTICOS -->
+    <string name="diagnostico_list">LISTA DIAGNOSTICOS</string>
+
+    <!-- ENFERMEDADES -->
+    <string name="enfermedades_list">LISTA ENFERMEDADES</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Gestion Programas Academicos">
+        <menu>
+            <item
+                android:id="@+id/nav_newprogram"
+                android:icon="@drawable/ic_add"
+                android:title="Registrar Programa" />
+
+            <item
+                android:id="@+id/nav_listprogram"
+                android:icon="@drawable/ic_list"
+                android:title="Listar Programas" />
+        </menu>
+    </item>
+
+    <item android:title="Gestion de Estudiantes">
+        <menu>
+            <item
+                android:id="@+id/nav_newestudiando"
+                android:icon="@drawable/ic_add"
+                android:title="Registrar Estudiante" />
+        </menu>
+    </item>
+
+</menu>

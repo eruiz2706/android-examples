@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blanco"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blanco"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nit:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:text="P1000.0199"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_nit"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:text="Uniajc ltda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_nombre"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sector:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:text="Educacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_sector"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logoc"
+            android:layout_width="90dp"
+            android:layout_height="73dp" android:src="@drawable/logo"
+            android:contentDescription="Hola" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eduardo.enfermedades.modulos.agenda.Crearagenda">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_guardaragenda" />
+
+        <TextView
+            android:text="Datos Cita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4s" />
+
+        <TextView
+            android:text="Medico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medico_newagenda" />
+
+        <TextView
+            android:text="Descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViews4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/descripcion_newagenda" />
+
+        <TextView
+            android:text="Fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="13"
+                android:id="@+id/fecha_newagenda"
+                android:layout_weight="2"
+                />
+
+            <Button
+                android:text="..."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/b_fecha_newagenda"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViedw6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="13"
+                android:layout_weight="2"
+                android:id="@+id/hora_newagenda" />
+
+            <Button
+                android:text="..."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/b_hora_newagenda"
+                 android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <Switch
+            android:text="Recordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recordatorio_newagenda" />
+
+        <TextView
+            android:text="Fecha Recordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="13"
+                android:id="@+id/fechar_newagenda"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="..."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/b_fechar_newagenda"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Hora Recordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVieddw6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="13"
+                android:id="@+id/horar_newagenda"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="..."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/b_horar_newagenda"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

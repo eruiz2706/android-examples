@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Gestion">
+        <menu>
+            <item
+                android:id="@+id/nav_agendacitas"
+                android:icon="@drawable/ic_agenda"
+                android:title="Agenda Citas" />
+            <item
+                android:id="@+id/nav_diagonosticos"
+                android:icon="@drawable/ic_diagnostico"
+                android:title="Diagnosticos Medicos" />
+            <item
+                android:id="@+id/nav_tratamientos"
+                android:icon="@drawable/ic_tratamientos"
+                android:title="Tratamientoss" />
+        </menu>
+    </item>
+
+    <item android:title="Recordatorios">
+        <menu>
+            <item
+                android:id="@+id/nav_alertacitas"
+                android:icon="@drawable/ic_alerta"
+                android:title="Alerta Citas"/>
+            <item
+                android:id="@+id/nav_alertamedicamento"
+                android:icon="@drawable/ic_alerta"
+                android:title="Toma de Medicamentos" />
+        </menu>
+    </item>
+
+    <item android:title="Maestros">
+        <menu>
+            <item
+                android:id="@+id/nav_medicos"
+                android:icon="@drawable/ic_medicos"
+                android:title="Medicos" />
+            <item
+                android:id="@+id/nav_medicamentos"
+                android:icon="@drawable/ic_medicamento"
+                android:title="Medicamentos" />
+            <item
+                android:id="@+id/nav_enfermedades"
+                android:icon="@drawable/ic_enfermedades"
+                android:title="Enfermedades" />
+        </menu>
+    </item>
+
+</menu>

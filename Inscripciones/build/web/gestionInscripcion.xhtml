@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Gestion Inscripciones</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="Estudiante"></h:outputText>
+                    <h:selectOneMenu id="select" value="#{controladorInscripcion.inscripcion.idEstudiante}">
+                        <f:selectItem itemLabel="-" itemValue="#{null}" />
+                        <f:selectItems value="#{controladorEstudiante.l_estudiante}" var="e" itemValue="#{e}" itemLabel="#{e.nombre}-#{e.apellidos}" />
+                    </h:selectOneMenu>
+                    <h:outputText value="Fecha"></h:outputText>
+                    <h:inputText  value="#{controladorInscripcion.inscripcion.fecha}"  >
+                                <f:convertDateTime pattern="yyyy-MM-dd"/>  
+                    </h:inputText>
+                    <h:outputText value="Programa"></h:outputText>
+                    <h:inputText  value="#{controladorInscripcion.inscripcion.programa}" />
+                    <h:outputText value="Pin"></h:outputText>
+                    <h:inputText  value="#{controladorInscripcion.inscripcion.pin}" />
+                    <h:outputText value="Puntaje"></h:outputText>
+                    <h:inputText  value="#{controladorInscripcion.inscripcion.puntaje}" />
+                    
+                    <h:commandButton value="Crear" action="#{controladorInscripcion.save()}"></h:commandButton>
+                    <h:message for="select" style="color:red"></h:message>
+                    </h:panelGrid>
+            </h:form>
+                        
+            <h1>Listado de Inscripciones</h1>
+            <br></br>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="Programa"></h:outputText>
+                    <h:inputText value="#{controladorInscripcion.b_programa}"></h:inputText> 
+                    <h:outputText value="Estudiantes Admitidos"></h:outputText>
+                    <h:selectBooleanCheckbox  value="#{controladorInscripcion.b_admitidos}" ></h:selectBooleanCheckbox>
+                    
+                    <h:commandButton value="Buscar" action="#{controladorInscripcion.search()}" ></h:commandButton>
+                
+                </h:panelGrid>
+            </h:form>
+            <p:dataTable value="#{controladorInscripcion.l_inscripcion}" var="a"
+                         rows="10"
+                         paginator="true"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         rowsPerPageTemplate="5,10,15">
+                <p:column headerText="Nombres">
+                    <h:outputText value="#{a.idEstudiante.nombre}" />
+                </p:column>
+                <p:column headerText="Apellidos">
+                    <h:outputText value="#{a.idEstudiante.apellidos}" />
+                </p:column>
+                <p:column headerText="Codigo Pin">
+                    <h:outputText value="#{a.pin}" />
+                </p:column>
+                <p:column headerText="Programa">
+                    <h:outputText value="#{a.programa}" />
+                </p:column>
+                <p:column headerText="Puntaje Icfes">
+                    <h:outputText value="#{a.puntaje}" />
+                </p:column>
+            </p:dataTable>
+            
+        </center>
+    </h:body>
+</html>
+

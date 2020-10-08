@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="etiqueta"
+                    android:id="@+id/tv_etiq1_listageneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_dato1_listgeneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_etiq2_listageneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_dato2_listgeneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_etiq3_listageneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_dato3_listgeneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_etiq4_listageneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_dato4_listgeneric"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_listgeneric"
+            android:layout_width="90dp"
+            android:layout_height="79dp" app:srcCompat="@mipmap/ic_launcher"
+            android:contentDescription="" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eduardo.enfermedades.modulos.enfermedades.Crearenfermedad">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="NUEVA ENFERMEDAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4s" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_nombreenfermedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/nombre_newenfermedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="14"
+                android:hint="Nombre *"
+                android:inputType="text"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:id="@+id/b_listarenfermedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/list32"/>
+            <ImageButton
+                android:id="@+id/b_guardarenfermedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/save32"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

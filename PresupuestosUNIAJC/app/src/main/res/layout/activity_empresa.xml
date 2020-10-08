@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_empresa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.app.presupuestosuniajc.ActEmpresa">
+    <EditText
+        android:id="@+id/txt_nit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nit"
+        android:padding="16dp"/>
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Empresa"
+        android:padding="16dp"/>
+    <EditText
+        android:id="@+id/txt_razons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Razon Social"
+        android:padding="16dp"/>
+    <EditText
+        android:id="@+id/txt_sector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sector"
+        android:padding="16dp"/>
+    <EditText
+        android:id="@+id/txt_numempleados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="Numero de empleados"
+        android:padding="16dp"/>
+    <EditText
+        android:id="@+id/txt_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripcion"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+        <ImageButton
+            android:id="@+id/btn_listar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/list32"/>
+        <ImageButton
+            android:id="@+id/btn_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/save32"/>
+    </LinearLayout>
+
+</LinearLayout>

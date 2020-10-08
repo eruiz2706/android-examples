@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Venta</string>
+    <string name="title_activity_lista_venta">ListaVenta</string>
+</resources>

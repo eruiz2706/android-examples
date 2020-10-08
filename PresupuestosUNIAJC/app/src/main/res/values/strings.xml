@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Presupuestos UNIAJC</string>
+    <string name="empresa">EMPRESA</string>
+    <string name="cedulas_presupuestales">CEDULAS PRESUPUESTALES</string>
+    <string name="productos">PRODUCTOS</string>
+    <string name="title_activity_menu_cedulas">MenuCedulas</string>
+    <string name="title_activity_list_emepresa">Emepresas</string>
+</resources>

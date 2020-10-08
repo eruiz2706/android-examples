@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eduardo.enfermedades.modulos.enfermedades.Listaenfermedades">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Nuevo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_newenfermedades" />
+
+        <TextView
+            android:text="Lista de Enfermedades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaview_enfermedades" />
+    </LinearLayout>
+</FrameLayout>
